@@ -21,8 +21,7 @@ html {
 }
 
 body {
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(14,15,0,1) 39%, rgba(87,85,9,1) 80%, rgba(13,13,0,1) 100%);
+  background-color: var(--color-bg);
   color: var(--color-primary);
   font-family:
     system-ui,
@@ -127,9 +126,11 @@ h1 h2 article p {
 }
 
 #page-logo {
-  height: 5em;
+  height: 3em;
   aspect-ratio: 1;
   margin: 0;
+  filter: drop-shadow(0 0 2px var(--color-primary)) invert(75%) sepia(28%)
+    saturate(526%) hue-rotate(167deg) brightness(200%) contrast(93%);
 }
 
 #navlinks {
