@@ -1,0 +1,24 @@
+<section id="about" class="section">
+  <div id="about-container" class="centered section-container">
+    <h1 class="section-header">About Us</h1>
+    <article class="section-article">
+      We’re a run crew based in Bow, East London. No ego, no pressure—just a group of people who love to run and explore the city. Whether you’re chasing a PB or just out for the vibes, we’ve got space for you.
+
+      Lace up, show up, and let’s move.
+    </article>
+  </div>
+  <div id="socials-container" class="section-container">
+    <!-- Keep the social icons dynamic -->
+    {{- range site.Params.socialIcons -}}
+      <a
+        href="{{ trim .url " " | safeURL }}"
+        target="_blank"
+        rel="noopener noreferrer me"
+        title="{{ .display | default (title .name) }}"
+        class="interactable"
+      >
+        {{ partial "svg.html" . }}
+      </a>
+    {{- end -}}
+  </div>
+</section>
