@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = "https://shotofcovfefe.github.io/bow-bees/"
 languageCode = 'en-us'
 title = 'Bow Bee Runners'
 theme = "yuan"
