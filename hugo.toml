@@ -1,0 +1,9 @@
+#baseURL = "https://shotofcovfefe.github.io/bow-bees/"
+baseURL = "/"
+languageCode = 'en-us'
+title = 'Bow Bee Runners'
+theme = "yuan"
+
+[params.assets]
+customCSS = ["css/custom.css"]
+logo = "/images/logo.svg"

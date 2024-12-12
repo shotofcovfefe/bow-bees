@@ -6,6 +6,9 @@
   {{ partial "head.html" . }}
   <body>
     {{ partial "header.html" . }}
+    <div id="floating-bee">
+        {{ partial "bee.html" }}
+    </div>
     <main>
       {{- if site.Params.enableMouseTracker -}}
         <div id="mauser">
@@ -15,7 +18,6 @@
       {{ partial "home.html" . }}
       {{ partial "about.html" . }}
       {{ partial "projects.html" . }}
-
     </main>
   </body>
 </html>

@@ -1,8 +1,0 @@
-baseURL = "https://shotofcovfefe.github.io/bow-bees/"
-languageCode = 'en-us'
-title = 'Bow Bee Runners'
-theme = "yuan"
-
-[params]
-customCSS = ["css/custom.css"]
-logo = "images/logo.png"
