@@ -2,7 +2,7 @@
   font-family: ThirdStreet;
   font-style: normal;
   font-weight: 900;
-  src: url(/fonts/ThirdStreetBold-Latin.woff2) format("woff2");
+  src: url("/fonts/ThirdStreetBold-Latin.woff2") format("woff2");
 }
 
 :root {
