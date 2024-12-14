@@ -4,13 +4,14 @@
 
   <!-- Assets with cache busting applied -->
   <!-- Note that intermediary caches may store separate copies with this technique, and you'd probably be better off with including versioning in filenames in that case -->
-  <link rel="stylesheet" href="/css/main.css?v=5" />
+  <link rel="stylesheet" href="css/main.css?v=5" />
 
-  <script src="/js/index.js?v=1" defer></script>
+  <script src="js/index.js?v=1" defer></script>
 
   <!-- bee animation -->
   {{ $styles := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+  <p>Debug CSS Path: {{ $styles.RelPermalink }}</p>
 
   <!-- Title -->
   <title>{{ .Site.Title }}</title>
