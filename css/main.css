@@ -292,3 +292,52 @@ h1 h2 article p {
     margin-top: 0.8em;
   }
 }
+
+#people-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.person-card {
+  flex: 1 1 250px; /* Adjust min-width as needed */
+  max-width: 150px;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.person-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+.person-name {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.person-description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  #people-display {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .person-card {
+    max-width: 100%;
+  }
+}
