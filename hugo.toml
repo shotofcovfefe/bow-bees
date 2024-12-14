@@ -1,10 +1,10 @@
-baseURL = "https://shotofcovfefe.github.io/bow-bees/"
+#baseURL = "https://shotofcovfefe.github.io/bow-bees/"
+baseURL = "/"
 
-#baseURL = "/"
 languageCode = 'en-us'
 title = 'Bow Bee Runners'
 theme = "yuan"
 
 [params.assets]
 customCSS = ["css/custom.css"]
-logo = "/images/logo.svg"
+logo = "images/logo.svg"
