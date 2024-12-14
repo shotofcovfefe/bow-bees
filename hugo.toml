@@ -1,9 +1,25 @@
 baseURL = "https://bowbees.run/"
 
 languageCode = 'en-us'
-title = 'Bow Bee Runners'
+title = 'Bow Bees Run Club'
 theme = "yuan"
 
 [params.assets]
 customCSS = ["css/custom.css"]
 logo = "images/logo.svg"
+
+
+[[params.itemDisplays]]
+name = "Andy G"
+description = "Club captain, tech guru, constantly injured."
+image = "images/andy.png"
+
+[[params.itemDisplays]]
+name = "Kyle H"
+description = "Event coordinator, route planner, forever improving."
+image = "images/kyle.png"
+
+[[params.itemDisplays]]
+name = "Laurie L"
+description = "Treasurer, running coach, long distance maestro."
+image = "images/laurie.png"

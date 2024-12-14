@@ -1,20 +1,12 @@
-<section id="projects" class="section">
-  <div id="projects-container" class="centered section-container">
-    <h1 class="section-header">Projects</h1>
-    <div id="projects-display" class="scrolling-container snaps-inline">
+<section id="people" class="section">
+  <div id="people-container" class="centered section-container">
+    <h1 class="section-header">People</h1>
+    <div id="people-display">
       {{- range site.Params.itemDisplays -}}
-        <div class="card interactable">
-          <a
-            href="{{ .url | safeURL }}"
-            target="_blank"
-            rel="noopener noreferrer me"
-            title="{{ .title }}"
-          >
-            <h2>{{ .name }}</h2>
-            <article class="section-article">
-              {{ truncate (site.Params.truncationLimit | default 150) .description }}
-            </article>
-          </a>
+        <div class="person-card interactable">
+          <img src="{{ .image | relURL }}" alt="{{ .name }}" class="person-image" />
+          <h2 class="person-name">{{ .name }}</h2>
+          <p class="person-description">{{ truncate (site.Params.truncationLimit | default 150) .description }}</p>
         </div>
       {{- end -}}
     </div>
