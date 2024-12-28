@@ -16,7 +16,7 @@ image = "images/andy.png"
 
 [[params.itemDisplays]]
 name = "Kyle H"
-description = "Event coordinator, route planner, forever improving."
+description = "Event coordinator, route planner, negative split mastermind."
 image = "images/kyle.png"
 
 [[params.itemDisplays]]

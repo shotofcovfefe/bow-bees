@@ -13,9 +13,9 @@
 
 
   <!-- bee animation -->
-  {{ $styles := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify }}
+  {{ $styles := resources.Get "scss/main.scss" | css.Sass | resources.Minify }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
-
+  
   <!-- Title -->
   <title>{{ .Site.Title }}</title>
   <meta name="title" content="{{ .Site.Title }}" />
